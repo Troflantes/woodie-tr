@@ -107,7 +107,6 @@ client.unload = command => {
 const fs = require("fs");
 const snekfetch = require('snekfetch');
 let points = JSON.parse(fs.readFileSync('./xp.json', 'utf8'));
-let prefix = "+";
 
 var f = [];
 function factorial (n) {
