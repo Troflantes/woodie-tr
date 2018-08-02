@@ -20,7 +20,6 @@ const ffmpeg = require("ffmpeg");
 const yt = require('ytdl-core');
 const tokens = require('./tokens.json');
 const modRole = 'asistanadmin';
-const modRole = 'asistanadmin';
 const inspect = require('util');
 const moment = require('moment');
 const items = JSON.parse(fs.readFileSync('items.json', 'utf8'));
