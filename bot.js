@@ -155,7 +155,7 @@ const level = new Discord.RichEmbed().setTitle(`${user.username}`).setDescriptio
 message.channel.send(`:pencil: **| ${user.username} adlı kullanıcının profil kartı**`)
 message.channel.send(level)
   }
-})
+});
 
     if (message.content === `${prefix}övgü`) {
       if (message.member.roles.find("name", "övgü")) {
