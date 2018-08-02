@@ -159,70 +159,7 @@ message.channel.send(`:pencil: **| ${user.username} adlı kullanıcının profil
 message.channel.send(level)
   }
 });
- 
 
-client.on('message', message => {
-	/**
-	message.member.roles.find("name", "abe")
-	if(message.content.includes('abe')){
-		
-		var kanal = message.guild.channels.find('name', 'uyarı')
-		var heheytşeş = new Discord.RichEmbed()
-			.addField("Suçlu", `${message.author}`)
-			.addField("Mesajı", `${message.content}`)
-			
-		if (message.author.id === "358299380182286336" || message.author.id === "449496747488837634" || message.author.id === "450930144337461248" || message.author.id === "331846231514939392") {
-			
-			return;
-			
-		} else if (!kanal){
-
-			message.delete()
-			message.reply('neden küfür ediyorsun')
-			message.guild.channels.find('name', 'xxwarningxx').send(heheytşeş)
-
-		}else {
-			message.delete()
-			message.reply('neden küfür ediyorsun')
-			kanal.send(heheytşeş)
-		}
-	}
-**/
-
-
-	if (message.author.id === client.user.id) return;
-	  console.log(`LOG: S: ${message.guild.name} M: ${message.content} Y: ${message.author.tag}`);
-
-  let xpAdd = Math.floor(Math.random() * 7) + 8;
-  console.log(xpAdd);
-
-  if(!xp[message.author.id]){
-    xp[message.author.id] = {
-      xp: 0,
-      level: 1
-    };
-  }
-
-
-  let curxp = xp[message.author.id].xp;
-  let curlvl = xp[message.author.id].level;
-  let nxtLvl = xp[message.author.id].level * 300;
-  xp[message.author.id].xp =  curxp + xpAdd;
-  if(nxtLvl <= xp[message.author.id].xp){
-    xp[message.author.id].level = curlvl + 1;
-    let lvlup = new Discord.RichEmbed()
-    .setTitle("SEVİYE ATLADIN!")
-    .setColor(purple)
-    .addField("Şuanki seviyen:", curlvl + 1);
-
-    //////message.channel.send(lvlup).then(msg => {msg.delete(5000)});
-}
-  fs.writeFile("./xp.json", JSON.stringify(xp), (err) => {
-    if(err) console.log(err)
-  });
-
-
-  
     if (message.content === `${prefix}övgü`) {
       if (message.member.roles.find("name", "övgü")) {
         message.reply('**Hay aslanım benim sen her şeyi becerirsin kendine güven aslanım benim! **')
