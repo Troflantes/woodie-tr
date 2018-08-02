@@ -156,27 +156,6 @@ message.channel.send(`:pencil: **| ${user.username} adlı kullanıcının profil
 message.channel.send(level)
   }
 });
-
-    if (message.content === `${prefix}övgü`) {
-      if (message.member.roles.find("name", "övgü")) {
-        message.reply('**Hay aslanım benim sen her şeyi becerirsin kendine güven aslanım benim! **')
-      } else {
-        message.reply("**Övgü Komutu** eşyasını satın alman lazım")
-      }
-    }
-
-	
-  if (message.content.toLowerCase() === 'sa') {
-
-	message.reply('Aleyküm selam, hoş geldin ^^');
-		}
-	
-	  if (message.content.toLowerCase() === 'naber') {
-		  message.reply('iyidir senden naber');
-	  }
-	  	  if (message.content.toLowerCase() === 'woodie') {
-		  message.reply('konuşmayı kes ve bana kemirmem için **odun** getir hemen!!');
-    }
     
 
     if (!userData[message.author.id]) userData[message.author.id] = {
