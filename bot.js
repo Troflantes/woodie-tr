@@ -20,7 +20,7 @@ const ffmpeg = require("ffmpeg");
 const yt = require('ytdl-core');
 const tokens = require('./tokens.json');
 const modRole = 'asistanadmin';
-const fs = require('fs');
+const fs = require("fs");
 const snekfetch = require('snekfetch');
 const inspect = require('util');
 const moment = require('moment');
@@ -106,7 +106,7 @@ client.unload = command => {
 };
 
 
-const fs = require('fs');
+const fs = require("fs");
 const snekfetch = require('snekfetch');
 let points = JSON.parse(fs.readFileSync('./xp.json', 'utf8'));
 let prefix = "+";
