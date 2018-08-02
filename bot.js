@@ -1,4 +1,4 @@
-﻿console.log("[App] Başlatılıyor...");
+console.log("[App] Başlatılıyor...");
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const bot = new Discord.Client({fetchAllMembers:true});
@@ -20,7 +20,6 @@ const ffmpeg = require("ffmpeg");
 const yt = require('ytdl-core');
 const tokens = require('./tokens.json');
 const modRole = 'asistanadmin';
-const fs = require("fs");
 const snekfetch = require('snekfetch');
 const inspect = require('util');
 const moment = require('moment');
