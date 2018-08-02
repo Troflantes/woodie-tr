@@ -109,7 +109,7 @@ client.unload = command => {
 const fs = require("fs");
 const snekfetch = require('snekfetch');
 let points = JSON.parse(fs.readFileSync('./xp.json', 'utf8'));
-let prefix = "!";
+let prefix = "+";
 
 var f = [];
 function factorial (n) {
@@ -158,7 +158,7 @@ const level = new Discord.RichEmbed().setTitle(`${user.username}`).setDescriptio
 message.channel.send(`:pencil: **| ${user.username} adlı kullanıcının profil kartı**`)
 message.channel.send(level)
   }
-});
+})
 
     if (message.content === `${prefix}övgü`) {
       if (message.member.roles.find("name", "övgü")) {
